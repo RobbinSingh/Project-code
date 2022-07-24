@@ -1,12 +1,6 @@
-@font-face{
-    src: url(fonts/Inter-VariableFont_slnt\,wght.ttf);
-    src: url(fonts/roboto\ slab/RobotoSlab-VariableFont_wght.ttf);
-    font-family: inter;
-    font-family: roboto;
-}
 body{
     background: #fafbfe;
-    font-family: Inter;
+    font-family:  'Inter', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
@@ -55,11 +49,8 @@ a>img{
 
 
 first div */
-.parent{
-    display: flex;
-}
-.points{
-    height: 100%;
+#fixed-div{
+    position: fixed; 
     width: 30%;
 }
 .static-list h2{
@@ -75,11 +66,11 @@ first div */
 .static-list{
     width: 400px;
     height: 400px;
-    margin: 255px 300px;
+    margin: 255px 90px;
     background: #fff;
     border: 1px dashed #d3e1ea;
     border-radius: 20px 14px;
-    padding: 65px 32px 32px;
+    padding: 65px 32px ;
     position: relative;
 }
 
@@ -97,17 +88,16 @@ first div */
 
 .right-corner{
     width:70%;
-
     float: right;
 }
 
-.content:last-child{
+#content:last-child{
     flex-direction: column;
     position: absolute;
     margin: 0;
     padding: 0;
 }
-.content{
+#content{
     width: 100%;
     word-spacing: 1px;
     display: flex;
@@ -164,10 +154,11 @@ input{
     text-align: center;
     align-items: center;
     width:80% ;
-    margin: 50px 0px auto 800px;
+    margin: 50px 0px auto 400px;
     background-color: white;
     padding: 50px ;
     font-size: 20px;
+    margin-bottom: 0px;
 }
 .__assitive{
     margin-top: 4px;
@@ -176,7 +167,7 @@ input{
 .form-title{
     margin-bottom: 50px;
     margin-top: 50px;
-    font-family: roboto;
+    font-family: 'Roboto Slab', serif;
     font-size:xxx-large;
     height: 60px;
 
@@ -198,10 +189,12 @@ form{
     margin-bottom: 50px;
     margin-right: 50px;
 }
-
 .experience{
     display: flex;
     margin-bottom: 30px;
+}
+.Work-Experience{
+    margin-bottom: 20px;
 }
 .worked{
     display: flex;
@@ -217,29 +210,30 @@ form{
     border: 2px solid #d3e1ea;
 }
 
-.textWrap>h2{
+.textWrap{
+
+    line-height: 30px;
+}
+
+.main-2{
     align-items: center;
-    line-height: 25px;
     margin-top: 0px;
-    height: fit-content;
+    color: #4e5c7a;
+    opacity: 0.8;
 }
 .main-3{
     color: #457eff;
     
 }
-.main-3{
-    color: #457eff;
-}
-.bag{
-    height: 100px;
+
+.bag{ 
     height: 50px;
-    margin: auto 10px ;
+    margin: 0px 10px ;
     
 }
 .bag2{
-    height: 100px;
     height: 50px;
-    margin: auto 10px ;
+    margin: 0px 10px 40px ;
 }
 .fresher{
     display: flex;
@@ -331,6 +325,7 @@ form{
     line-height: 22px;
     font-size: 28px ;
     border: none;
+    width: fit-content;
 }
 .T-C {
     color: #445578;
@@ -372,7 +367,8 @@ form{
 .gsignup{
     width: 153px;
     position: relative;
-    top: -430px;
+    top: -400px;
+    left: 0px;
     text-align: center;
     border-left: 2px solid #d3e1ea;
     height: 353px;
@@ -424,22 +420,24 @@ form{
 
 
 */
+
 footer{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    display: flex;
     text-align: center;
     font-size: 20px;
-    width: auto;
-    margin: 42px auto 110px 950px;
+    width: fit-content;
+    padding-bottom: 300px;
+    margin: 0px 0px 0px 1000px;
     
 }
 footer a{
     color: #457eff ;
-
+    
     text-decoration: none;
 }
+
 footer li{
     display: inline-flex;
     margin: 10px;

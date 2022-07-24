@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-In</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <form>
+        <label for="Email">Email Id</label>
+        <input id="Email" type="email" placeholder="Enter Email">
+        <label for="passcode">Password</label>
+        <input id="passcode" type="password" placeholder="Enter Password">
+        <input type="submit">
+        <p>Sign-Up first!! <a href="index.html"> Sign-Up</a></p> 
+        
+    </form>
+</body>
+</html>
+<script>
+    let arrdata=JSON.parse(localStorage.getItem("data"))
+    document.querySelector("form").addEventListener("submit",getin);
+    function getin(event){
+        event.preventDefault();   
+        let email=document.querySelector("#Email").value
+        let passcode=document.querySelector("#passcode").value;
+        arrdata.forEach(function(element) {
+            if(email==element.Email&&passcode==element.Pass){
+                alert("Log-In Sucessful!!")
+            }
+            else{
+                alert("Incorrect Details!!")
+            }
+        });
+      
+    }
+
+</script>
