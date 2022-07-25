@@ -144,7 +144,7 @@ form{
 form h2{
     margin-top: 20px ;
 }
-input{
+form input{
     padding-left: 20px;
     border: 2px solid;
     height:30px;
